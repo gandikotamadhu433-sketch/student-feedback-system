@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Feedback System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Feedback System</h1>
+
+        <form action="/submit" method="POST">
+
+            <label>Student Name</label>
+            <input type="text" name="name" required>
+
+            <label>Roll Number</label>
+            <input type="text" name="roll_number" required>
+
+            <label>Department</label>
+
+            <select name="department" required>
+                <option value="">Select Department</option>
+                <option>CSE</option>
+                <option>ECE</option>
+                <option>EEE</option>
+                <option>MECH</option>
+                <option>CIVIL</option>
+            </select>
+
+            <label>Subject</label>
+            <input type="text" name="subject" required>
+
+            <label>Rating</label>
+
+            <select name="rating" required>
+                <option value="">Select Rating</option>
+                <option value="5">5 - Excellent</option>
+                <option value="4">4 - Very Good</option>
+                <option value="3">3 - Good</option>
+                <option value="2">2 - Average</option>
+                <option value="1">1 - Poor</option>
+            </select>
+
+            <label>Comments</label>
+
+            <textarea
+                name="comments"
+                placeholder="Enter your feedback here..."
+                rows="5">
+            </textarea>
+
+            <button type="submit">
+                Submit Feedback
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>
